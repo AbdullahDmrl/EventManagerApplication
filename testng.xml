@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="Utils.ExtentReporterTNG"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="/Users/pc3/IdeaProjects/EventManagerApplication">
+        <classes>
+            <class name="EventManagerAplicationsTests._01_LoginModuleTest">
+            <methods>
+                <include name="Test1_LoginNegativeTest"/>
+            </methods>
+            </class>
+            <class name="EventManagerAplicationsTests._02_EventModuleFunctionTest">
+                <methods>
+                    <include name="Test1_CreateNewEventNegativeTest"/>
+                    <include name="Test2_CreateNewEvent"/>
+                    <include name="Test3_CheckEventsList"/>
+                    <include name="Test4_EditAndUpdateNewEvent"/>
+                    <include name="Test5_CheckParticipantsList"/>
+                    <include name="Test6_DeleteEvent"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suit">
+
+    <test name="test1">
+        <parameter name="browser" value="safari"></parameter>
+
+        <classes>
+            <class name="EventManagerAplicationTestsParameter._01_LoginModuleTestParameter"></class>
+            <class name="EventManagerAplicationTestsParameter._02_EventModuleFunctionTestParameter"></class>
+        </classes>
+    </test>
+
+</suite>
